@@ -19,7 +19,7 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout wildcard_identicum_c
     Common Name (eg, your name or your server hostname) []: `*.identicum.com`
     Email Address []: `no-reply@identicum.com`
 
-Put the generated certificate files into your local `conf` directory.
+Put the generated certificate files into your local `./conf/` directory.
 When using a self-signed certificate, you have to comment-out the `SSLCACertificateFile` directive in the conf files.
 
 ## IDP
@@ -36,16 +36,16 @@ Create an OpenID Connect Client in your IDP using the following information:
 Samples are provided in the [conf.samples](./conf.samples/) folder.
 
 ### default-vhost
-Copy [template](./conf.samples/01_default-vhost.conf) into your local `conf` folder and customize parameters for hostnames and certificate files.
+Copy [template](./conf.samples/01_default-vhost.conf) into your local `./conf/` folder and customize parameters for hostnames and certificate files.
 
 ### mod_auth_openidc
-Copy [template](./conf.samples/02_mod_auth_openidc.conf) into your local `conf` folder and customize parameters:
+Copy [template](./conf.samples/02_mod_auth_openidc.conf) into your local `./conf/` folder and customize these parameters:
 - OIDCProviderMetadataURL
 - OIDCClientID
 - OIDCClientSecret
 - OIDCCryptoPassphrase
 
-Use rest of the templates to create as many proxy definitions as you need, based on the samples.
+Create as many proxy definitions as you need, using the provided templates.
 
 ## Run the container
 
