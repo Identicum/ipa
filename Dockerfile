@@ -15,7 +15,7 @@ RUN wget http://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/h/hiredis-0.12.1
     wget https://github.com/zmartzone/mod_auth_openidc/releases/download/v2.4.0/cjose-0.6.1.5-1.el7.x86_64.rpm -O /tmp/cjose.rpm && \
     yum localinstall -y /tmp/cjose.rpm && \
     rm -f /tmp/cjose.rpm && \
-    wget https://github.com/zmartzone/mod_auth_openidc/releases/download/v2.4.2.1/mod_auth_openidc-2.4.2.1-1.el7.x86_64.rpm -O /tmp/mod_auth_openidc.rpm && \
+    wget https://github.com/zmartzone/mod_auth_openidc/releases/download/v2.4.3/mod_auth_openidc-2.4.3-1.el7.x86_64.rpm -O /tmp/mod_auth_openidc.rpm && \
     yum localinstall -y /tmp/mod_auth_openidc.rpm && \
     rm -f /tmp/mod_auth_openidc.rpm
 
